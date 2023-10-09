@@ -1,0 +1,139 @@
+body /* Main Body Design */
+{
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #53504d, #a38f8fb4); /* Adjusted gradient colors */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container /* Main Box Design */
+{
+    max-width: 500px;
+    padding: 20px;
+    background-color: #323232;
+    border-radius: 20px;
+    box-shadow: 20px 50px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+header 
+{
+    text-align: center;
+}
+
+h1 /* Heading Design */
+{
+    font-size: 40px;
+    font-family: cursive;
+    color: #DDD0C8; /* Lighter text color for better contrast */
+    margin-bottom: 30px;
+}
+
+.task-input 
+{
+    display: flex;
+}
+
+input[type="text"] /* Input text of task Design */
+{
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    font-family: cursive;
+    background-color:#777777;
+}
+
+button /* Add Button Design */
+{
+    padding: 10px 15px;
+    background-color: #DDD0C8;
+    color: #000000;
+    border: none;
+    font-family: cursive;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list /* Added Task list Design */
+{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    font-family: cursive;
+    flex-direction: column; /* Display tasks vertically */
+    align-items: left ; /* Align left tasks horizontally */
+    flex-wrap:wrap; /* Allow tasks to wrap to the next line */
+    max-height: 250px; /* Set a maximum height for vertical scrolling */
+    overflow-y:auto; /* Enable vertical scrolling if tasks exceed max height */
+    scroll-behavior:smooth;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #DDD0C8;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Add this property to allow text to wrap within the li element */
+    
+}
+
+ul 
+{
+    list-style:none;
+    padding: 00;
+}
+
+li /* Added Task Visual Design */
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #DDD0C8;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+li button /* Delete Task Button Design */
+{
+    background-color: #1a0d0dd8;
+    font-family: cursive;
+    color: #fff;
+    border:#000000;
+    border-radius: 50px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.clear-button /* Clear All Button Design */
+{
+   
+    margin-top: 20px;
+    background-color: #ce0000a1;
+    color: #fff;
+    border: #000000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.clear-button:hover /* Clear All Button Animation */
+{
+    background-color: #c92525;
+}
